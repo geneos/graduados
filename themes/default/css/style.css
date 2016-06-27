@@ -199,7 +199,7 @@ div#searchbox{
     background: #BEBEBE;
     border: #9F9F9F 2px solid;
     border-top: 0;
-    width:380px;
+    width:220px;
     padding:0 0 10px 0;
     
 }
@@ -216,6 +216,7 @@ div.language-box{
     padding: 0px;
     margin: 10px 0 0 15px;
     float: left;
+    display: none;
 }
 
 div.language-box select{
@@ -277,7 +278,7 @@ div.submit-incident{
 
 div.submit-incident a, div.submit-incident a:hover{
     padding: 8px 10px 8px 35px;
-    background-color: #368C00;
+    background-color: #0F0F42;
     background-image: url(../images/submit-incident.png);
     background-position:10px 8px;
     background-repeat:no-repeat;
@@ -292,7 +293,7 @@ div.submit-incident a, div.submit-incident a:hover{
 
 /* mainmenu */
 div#mainmenu{
-    background: #C2C2C2;
+    background: #0F0F42;
     border: #FFF 2px solid;
     padding: 7px 10px;
 }
@@ -435,6 +436,7 @@ div.slider-holder {
     margin-top:15px;
     width:554px;
     padding-left: 11px;
+    display: none;
 }
 
 div.slider-holder label{
@@ -505,14 +507,14 @@ ul.category-filters li{
 ul.category-filters li a{
     display: block;
     padding: 8px 10px 8px 5px;
-    font-size: 15px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: bold;
     text-decoration: none;
     color: #3F3F3F;
     border: #E7E3DA 1px solid;
     position: relative;
-    line-height: 17px;
+    line-height: 22px;
     overflow: hidden;
 }
 
@@ -1026,6 +1028,8 @@ div.incident-notation ul li{
 }
 .category-icon img {
 	float:left;padding-right:5px;
+	height: 22px;
+	width: 22px;
 }
 
 /* Stylized Forms */

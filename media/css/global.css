@@ -8,6 +8,7 @@
 	padding:0;
 	margin:0;
 	width:100%;
+	display: none;
 	
 	-moz-box-shadow: 1px 1px 1px #CCC;
 	-webkit-box-shadow: 1px 1px 1px #CCC;

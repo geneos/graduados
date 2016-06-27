@@ -41,7 +41,7 @@ div#logo{
 
 /* Main Menu */
 div#mainmenu{
-    background-color: #C2C2C2;
+    background-color: ##0F0F42;
 }
 
 div#mainmenu a{
@@ -50,12 +50,12 @@ div#mainmenu a{
 
 div#mainmenu a:hover{
 	color: #fff;
-    background-color: #036564;
+    background-color: ##0F0F42;
 }
 
 div#mainmenu a.active{
     color: #fff;
-    background-color: #036564;
+    background-color: ##0F0F42;
 }
 
 

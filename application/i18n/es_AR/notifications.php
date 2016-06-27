@@ -17,7 +17,7 @@ $lang = array(
 	) ,
 	'admin_new_report' => array(
 		'message' => 'Su sitio ha recibido un nuevo reporte',
-		'subject' => 'Nuevo reporte',
+		'subject' => 'Nuevo registro',
 	) ,
 	'admin_new_sms' => array(
 		'message' => 'Un nuevo mensaje de texto ha sido publicado en su página web',
