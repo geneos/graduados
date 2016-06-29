@@ -71,6 +71,7 @@ function fillFields(event)
 	show_addedit();
 	$("#category_id").attr("value", params.category_id);
 	$("#parent_id").attr("value", params.parent_id);
+	$("#type_id").attr("value", params.type_id);
 	$("#category_title").attr("value", params.category_title);
 	$("#category_description").attr("value", params.category_description);
 	$("#category_color").attr("value", params.category_color);
