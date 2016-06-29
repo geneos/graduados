@@ -95,7 +95,7 @@
 							<p></p>
 						</div>
 
-						<h3>
+						<!-- <h3>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('mode', 'fl-incident-mode');">
 								<?php echo Kohana::lang('ui_main.clear')?>
 							</a>
@@ -126,8 +126,36 @@
 							<?php endforeach; ?>
 
 							</ul>
-						</div>
+						</div> -->
 						
+						<h3>
+							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('t', 'fl-type');"><?php echo Kohana::lang('ui_main.clear')?></a>
+							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.type');?></a>
+						</h3>
+						<div class="f-type-box">
+							<p><?php echo Kohana::lang('ui_main.filter_reports_contain'); ?>&hellip;</p>
+							<ul class="filter-list fl-type">
+								<li>
+									<a href="#" id="filter_link_type_1">
+										<span class="item-icon ic-webform">&nbsp;</span>
+										<span class="item-title"><?php echo Kohana::lang('ui_main.pre'); ?></span>
+									</a>
+								</li>
+								<li>
+									<a href="#" id="filter_link_type_2">
+										<span class="item-icon ic-webform">&nbsp;</span>
+										<span class="item-title"><?php echo Kohana::lang('ui_main.grado'); ?></span>
+									</a>
+								</li>
+								<li>
+									<a href="#" id="filter_link_type_3">
+										<span class="item-icon ic-webform">&nbsp;</span>
+										<span class="item-title"><?php echo Kohana::lang('ui_main.post')?></span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
 						<h3>
 							<a href="#" class="small-link-button f-clear reset" onclick="removeParameterKey('m', 'fl-media');"><?php echo Kohana::lang('ui_main.clear')?></a>
 							<a class="f-title" href="#"><?php echo Kohana::lang('ui_main.media');?></a>
@@ -147,12 +175,12 @@
 										<span class="item-title"><?php echo Kohana::lang('ui_main.video'); ?></span>
 									</a>
 								</li>
-								<li>
+<!-- 								<li>
 									<a href="#" id="filter_link_media_4">
 										<span class="item-icon ic-news">&nbsp;</span>
 										<span class="item-title"><?php echo Kohana::lang('ui_main.reports_news')?></span>
 									</a>
-								</li>
+								</li> -->
 							</ul>
 						</div>
 						

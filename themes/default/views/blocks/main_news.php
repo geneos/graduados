@@ -4,8 +4,8 @@
 	<thead>
 		<tr>
 			<th scope="col"><?php echo Kohana::lang('ui_main.title'); ?></th>
-			<th scope="col"><?php echo Kohana::lang('ui_main.source'); ?></th>
-			<th scope="col"><?php echo Kohana::lang('ui_main.date'); ?></th>
+<!-- 			<th scope="col"><?php echo Kohana::lang('ui_main.source'); ?></th>
+ -->			<th scope="col"><?php echo Kohana::lang('ui_main.date'); ?></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -22,8 +22,8 @@
 			?>
 			<tr>
 				<td><a href="<?php echo $feed_link; ?>" target="_blank"><?php echo $feed_title ?></a></td>
-				<td><?php echo $feed_source; ?></td>
-				<td><?php echo $feed_date; ?></td>
+<!-- 				<td><?php echo $feed_source; ?></td>
+ -->				<td><?php echo $feed_date; ?></td>
 			</tr>
 			<?php
 			}

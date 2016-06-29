@@ -555,6 +555,7 @@
 		keyToFilter['mode'] = 'filter_link_mode_';
 		keyToFilter['m']    = 'filter_link_media_';
 		keyToFilter['v']    = 'filter_link_verification_';
+		keyToFilter['t']    = 'filter_link_type_';
 		<?php
 			// Allows us to pre-select the filter when using permalinks
 			Event::run('ushahidi_action.report_js_keyToFilter');
@@ -760,6 +761,21 @@
 				urlParameters["mode"] = incidentModes;
 			}
 			
+			// 
+			// Get the type type
+			// 
+			var typeTypes = [];
+			$.each($(".fl-type li a.selected"), function(i, item){
+				typeId = item.id.substring("filter_link_type_".length);
+				typeTypes.push(typeId);
+			});
+			
+			if (typeTypes.length > 0)
+			{
+				urlParameters["t"] = typeTypes;
+			}
+			
+
 			// 
 			// Get the media type
 			// 

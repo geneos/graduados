@@ -60,6 +60,7 @@ class Manage_Controller extends Admin_Controller
 			'action' => '',
 			'category_id' => '',
 			'parent_id' => '',
+			'type_id' => '',
 			'category_title' => '',
 			'category_description' => '',
 			'category_color' => '',
@@ -89,7 +90,7 @@ class Manage_Controller extends Admin_Controller
 			$post_data = array_merge($_POST, $_FILES);
 			
 			// Extract category-specific  information
-			$category_data = arr::extract($post_data, 'parent_id',
+			$category_data = arr::extract($post_data, 'parent_id', 'type_id',
 				'category_title', 'category_description', 'category_color');
 			
 			// Extract category image and category languages for independent validation

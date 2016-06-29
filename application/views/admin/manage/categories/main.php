@@ -67,9 +67,21 @@
 							<strong><?php echo Kohana::lang('ui_main.description');?>:</strong><br />
 							<?php print form::input('category_description', $form['category_description'], ' class="text category_description"'); ?>
 						</div>
+						<div class="tab_form_item">
+							<?php 
+							$types_array = array(
+							    0 => "NC",
+							    1 => "Pregrado",
+							    2 => "Grado",
+							    3 => "Posgrado"
+							);
+							?>
+							<strong><?php echo Kohana::lang('ui_main.type');?>:</strong><br />
+							<?php print form::dropdown('type_id', $types_array, '0'); ?>
+						</div>
 						<div style="clear:both"></div>
 
-						<div style="clear: left; width: 100%;">
+ 						<div style="clear: left; width: 100%;">
 							<a href="#" id="category_translations" class="category_translations" style="clear:both;">Category Translations</a>
 							<div style="clear:both;"></div>
 							<div class="category_translations_form_fields">
@@ -150,6 +162,7 @@
 									{
 										$category_id = $category->id;
 										$parent_id = $category->parent_id;
+										$type_id = $category->type_id;
 										$category_title = Category_Lang_Model::category_title($category_id);
 										$category_description = substr(Category_Lang_Model::category_description($category_id), 0, 150);
 										$category_color = $category->category_color;
@@ -160,6 +173,7 @@
 										$fillFields = array();
 										$fillFields['category_id'] = $category->id;
 										$fillFields['parent_id'] = $category->parent_id;
+										$fillFields['type_id'] = $category->type_id;
 										$fillFields['category_title'] = $category->category_title;
 										$fillFields['category_description'] = $category->category_description;
 										$fillFields['category_color'] = $category->category_color;
@@ -227,6 +241,7 @@
 										{
 											$category_id = $child->id;
 											$parent_id = $child->parent_id;
+											$type_id = $child->type_id;
 											$category_title = Category_Lang_Model::category_title($category_id);
 											$category_description = substr(Category_Lang_Model::category_description($category_id), 0, 150);
 											$category_color = $child->category_color;
@@ -236,6 +251,7 @@
 											$fillFields = array();
 											$fillFields['category_id'] = $child->id;
 											$fillFields['parent_id'] = $child->parent_id;
+											$fillFields['type_id'] = $child->type_id;;
 											$fillFields['category_title'] = $child->category_title;
 											$fillFields['category_description'] = $child->category_description;
 											$fillFields['category_color'] = $child->category_color;

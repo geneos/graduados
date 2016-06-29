@@ -935,6 +935,33 @@ class reports_Core {
 			}
 			
 		}
+
+		// 
+		// Check for type parameter
+		// 
+
+		if (isset($url_data['t']) AND is_array($url_data['t']))
+		{
+			// An array of media filters has been specified
+			// Validate the media types
+			$type_types = array();
+			foreach ($url_data['t'] as $type_type)
+			{
+				if (intval($type_type) > 0)
+				{
+					$type_types[] = intval($type_type);
+				}
+			}
+			
+			if (count($type_types) > 0)
+			{
+				array_push(self::$params, 
+					'c.id IN (SELECT DISTINCT tc.id FROM '
+						.$table_prefix.'category tc WHERE tc.type_id IN ('.implode(",", $type_types).'))'
+				);
+			}
+			
+		}
 		
 		// 
 		// Check if the verification status has been specified

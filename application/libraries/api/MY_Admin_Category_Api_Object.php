@@ -158,6 +158,7 @@ class Admin_Category_Api_Object extends Api_Object_Core {
 				$category_id = $post->category_id;
 				$category = new Category_Model($category_id);
 				$category->parent_id = $post->parent_id;
+				$category->type_id = $post->type_id;
 				$category->category_title = $post->category_title;
 				$category->category_description = $post->category_description;
 				$category->category_color = $post->category_color;
@@ -380,7 +381,7 @@ class Admin_Category_Api_Object extends Api_Object_Core {
 	{
 
 		// setup and initialize form field names
-		$form = array('parent_id' => '', 'category_title' => '', 'category_description' => '', 'category_color' => '', 'category_image' => '');
+		$form = array('parent_id' => '', 'type_id' => '', 'category_title' => '', 'category_description' => '', 'category_color' => '', 'category_image' => '');
 
 		// copy the form as errors, so the errors will be stored
 		//with keys corresponding to the form field names
@@ -400,6 +401,7 @@ class Admin_Category_Api_Object extends Api_Object_Core {
 			// Add some rules, the input field, followed by a list
 			//of checks, carried out in order
 			$post->add_rules('parent_id', 'required', 'numeric');
+			$post->add_rules('type_id', 'required', 'numeric');
 			$post->add_rules('category_title', 'required', 'length[3,80]');
 			$post->add_rules('category_description', 'required');
 			$post->add_rules('category_color', 'required', 'length[6,6]');
@@ -413,6 +415,7 @@ class Admin_Category_Api_Object extends Api_Object_Core {
 
 				// Save Action
 				$category->parent_id = $post->parent_id;
+				$category->type_id = $post->type_id;
 				$category->category_title = $post->category_title;
 				$category->category_description = $post->category_description;
 				$category->category_color = $post->category_color;

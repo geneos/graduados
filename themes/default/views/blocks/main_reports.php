@@ -5,8 +5,8 @@
 		<tr>
 			<th scope="col" class="title"><?php echo Kohana::lang('ui_main.title'); ?></th>
 			<th scope="col" class="location"><?php echo Kohana::lang('ui_main.location'); ?></th>
-			<th scope="col" class="date"><?php echo Kohana::lang('ui_main.date'); ?></th>
-		</tr>
+<!-- 			<th scope="col" class="date"><?php echo Kohana::lang('ui_main.date'); ?></th>
+ -->		</tr>
 	</thead>
 	<tbody>
 		<?php
@@ -23,12 +23,14 @@
 			$incident_date = $incident->incident_date;
 			$incident_date = date('M j Y', strtotime($incident->incident_date));
 			$incident_location = $incident->location->location_name;
+			$incident_location_split= explode( "," , $incident_location);
+			$incident_location_lenght= sizeof($incident_location_split);
 		?>
 		<tr>
 			<td><a href="<?php echo url::site() . 'reports/view/' . $incident_id; ?>"> <?php echo $incident_title ?></a></td>
-			<td><?php echo html::escape($incident_location) ?></td>
-			<td><?php echo $incident_date; ?></td>
-		</tr>
+			<td><?php echo html::escape($incident_location_split[$incident_location_lenght-1])?></td>
+<!-- 			<td><?php echo $incident_date; ?></td>
+ -->		</tr>
 		<?php
 		}
 		?>

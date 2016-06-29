@@ -233,9 +233,9 @@
 						<strong><?php echo Kohana::lang('ui_main.filters'); ?></strong>
 						<ul>
 							<li><a id="media_0" class="active" href="#"><span><?php echo Kohana::lang('ui_main.all'); ?></span></a></li>
-							<li><a id="media_4" href="#"><span><?php echo Kohana::lang('ui_main.news'); ?></span></a></li>
-							<li><a id="media_1" href="#"><span><?php echo Kohana::lang('ui_main.pictures'); ?></span></a></li>
-							<li><a id="media_2" href="#"><span><?php echo Kohana::lang('ui_main.video'); ?></span></a></li>
+							<li><a id="media_4" href="#"><span><?php echo Kohana::lang('ui_main.pre'); ?></span></a></li>
+							<li><a id="media_1" href="#"><span><?php echo Kohana::lang('ui_main.grado'); ?></span></a></li>
+							<li><a id="media_2" href="#"><span><?php echo Kohana::lang('ui_main.post'); ?></span></a></li>
 						</ul>
 					</div>
 

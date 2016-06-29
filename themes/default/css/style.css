@@ -541,6 +541,7 @@ div.layers-filters{
 div.additional-content{
     padding: 15px;
     background: #F0F0F0;
+    display: none;
 }
 
 div.additional-content ol {
@@ -650,6 +651,7 @@ div.footer-credits{
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 20px 0 0;
+    display: none;
 }
 
 div.footer-credits .footer-logo{
@@ -1021,6 +1023,10 @@ div.incident-notation ul li{
     margin-right: 8px;
     width:16px;
     border:1px solid white;
+}
+
+.category_translations {
+	display: none;
 }
 
 .category-title {
@@ -1807,9 +1813,9 @@ ul.link-toggle li a:hover.next { background-color:#6e6e6e; }
 
 
 /* Heading with tabs */
-.heading { border-bottom:3px solid #c2c2c2; position:relative; }
+.heading { border-bottom:3px solid #c2c2c2; position:relative; display: none;}
 a.ic-time {
-    font-size:12px; 
+    font-size:0px; 
     font-weight:normal; 
     display:inline-block; 
     padding:3px 0 3px 20px; 
