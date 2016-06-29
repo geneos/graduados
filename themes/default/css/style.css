@@ -2146,6 +2146,6 @@ div.ci_checkin {
 }
 
 
-.OpenLayers_Control_MaximizeDiv {
+#OpenLayers_Control_MaximizeDiv {
 	display: none;
 }
