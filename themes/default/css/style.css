@@ -1921,6 +1921,7 @@ span.r_cat-desc { display:none; }
     width:24px;
     padding:4px 0 3px;
     background:transparent url(../../../media/img/icon_sprite.png) 0 0 no-repeat;
+    display: none;
 }
 
 .r_details h3 a.r_comments:hover {  }
@@ -1955,6 +1956,7 @@ p.r_date {
     padding:3px 5px 4px 23px; 
     background:#e3e3e3 url(../../../media/img/icon_sprite.png) 0px -133px no-repeat;
     color:#908b88;
+    display: none;
 }
         
 div.r_description { margin-bottom:5px; width:450px; }
