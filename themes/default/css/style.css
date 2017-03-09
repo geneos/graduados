@@ -53,8 +53,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: #333333;
     font-size: 12px;
-    background: #585858 url(../images/page-bg.jpg) 50% 0 repeat-x;
-}
+    background: #4180c7;
+ }
 
 
 /* wrapper setup */
@@ -66,7 +66,7 @@ div.wrapper, div.rapidxwpr{
 /* header */
 div#header{
     position: relative;
-    height: 144px;
+    height: 154px;
     margin: 0px 0px 0px 0px;
 }
 
@@ -149,6 +149,7 @@ div#main{
     width: auto;
     margin: 0px;
     padding: 15px 29px;
+    background-color: #E8F0FA;
 }
 
 div#mainmiddle{
@@ -178,14 +179,14 @@ div#footer{
     width: auto;
     clear: both;
     color: #fff;
-    background-color: #A8A8A8;
-    padding-bottom: 20px;
+    background-color: #a8a8a8;
+    padding-bottom: 90px;
 }
 
 div#underfooter{
     width:auto;
     height: 28px;
-    background-color:#A8A8A8;
+    background-color:#4180c7;
     position: relative;
     top: -28px;
     z-index: -1;
@@ -196,8 +197,8 @@ div#searchbox{
     position: absolute;
     top: 0px;
     right: 0px;
-    background: #BEBEBE;
-    border: #9F9F9F 2px solid;
+    /* background: #BEBEBE;
+    border: #9F9F9F 2px solid; */
     border-top: 0;
     width:220px;
     padding:0 0 10px 0;
@@ -277,6 +278,7 @@ div.submit-incident{
 }
 
 div.submit-incident a, div.submit-incident a:hover{
+    display: none;
     padding: 8px 10px 8px 35px;
     background-color: #0F0F42;
     background-image: url(../images/submit-incident.png);
@@ -294,7 +296,7 @@ div.submit-incident a, div.submit-incident a:hover{
 /* mainmenu */
 div#mainmenu{
     background: #0F0F42;
-    border: #FFF 2px solid;
+    border: #E8F0FA 2px solid;
     padding: 7px 10px;
 }
 
@@ -359,7 +361,7 @@ div.filters li{
 }
 
 div.filters ul li a{
-    color: #999966;
+    color: #2D2D1E;
     padding: 0px 5px;
     text-decoration: none;
 }
@@ -483,6 +485,7 @@ div.cat-filters span{
     margin-left:5px;
     color:#666;
     letter-spacing:2px;
+    display: none;
 }
 div.cat-filters span a{
     color:#666;
@@ -554,9 +557,10 @@ div.how-to-report-methods div{
 
 /* content blocks */
 div.content-container{
-    padding: 0 0 15px 15px;
-    background: #E2E2E2;
+    padding: 0 0 15px 15px; 
+    background: #F0F0F0 url(../images/fondo2.jpg) no-repeat ;
 }
+
 ul.content-column{
     width: 100%;
     padding: 0;
@@ -574,6 +578,7 @@ div.content-block {
     margin-right: 15px; /*Creates the 10px gap between each column*/
     padding: 15px;
     background-color: #FFFFFF;
+    opacity: 0.75;
 }
 div.content-block h5 span {
     font-size: 75%;
@@ -615,7 +620,7 @@ div.site-footer{
 /* footer menu */
 div.footermenu{
     margin: 0 10px;
-    float: left;
+    float: right;
 }
 
 div.footermenu ul{
@@ -646,12 +651,12 @@ div.footermenu ul li a:hover{
 
 /* footer credits */
 div.footer-credits{
-    float: right;
+    float: left;
     font-size: 70%;
     font-weight: bold;
     text-transform: uppercase;
     margin: 0 20px 0 0;
-    display: none;
+
 }
 
 div.footer-credits .footer-logo{
@@ -688,7 +693,7 @@ div.report-details{
 .report_detail .r_unverified { background:#A60003; }
 
 .report_detail .r_location { background: transparent url(../../../media/img/icon_sprite.png) -5px -163px no-repeat; }
-.report_detail .r_date { background: transparent url(../../../media/img/icon_sprite.png) -4px -133px no-repeat; }
+.report_detail .r_date { display: none; background: transparent url(../../../media/img/icon_sprite.png) -4px -133px no-repeat; }
 
 .report-when-where { color:#908B88; margin-bottom:10px; }
 .report-when-where span { padding:3px 5px 3px 18px;  } 
@@ -752,6 +757,7 @@ div.credibility {
     margin-top:10px;
     padding:3px;
     border-top:1px dotted #C0C2B8;
+    display:none;
 }
 
 div.report-title {
@@ -969,7 +975,7 @@ table.table-list tbody tr td{
 }
 
 table.table-list tbody tr td a{
-    color: #0099CC;
+    color: #000000;
 }
 
 div.location{
@@ -1141,13 +1147,14 @@ td.w-03 { border-bottom:1px dotted #E8E4DB; text-transform:capitalize; }
 .report_row .date-box img{ padding:0 5px 0 5px; }
 .report_row .time{ float:left; }
 .report_row .optional-info{ float:left; margin-right:10px; }
-
+#datetime_default {display: none;}
 .report_category { clear:both; overflow:hidden; font-size:90%; }
 .report_category ul{ width:50%; float:left; margin:0; padding:0 0 11px; }
 .report_category ul li{ overflow:hidden; list-style:none; }
 .report_category ul li label{ color:#555; }
 
 .report_row .custom-field-option { margin-right: 15px; }
+#divNews {display: none;}
 
 /*Categories Tree*/
 .report_category ul ul { width: auto; float: none; }

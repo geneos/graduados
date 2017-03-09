@@ -89,7 +89,7 @@ class HttpClient_Core
 		curl_setopt($this->ch, CURLOPT_FAILONERROR, TRUE);
 
 		// allow redirects just incase a user wants that
-		curl_setopt($this->ch, CURLOPT_FOLLOWLOCATION, TRUE);
+		//curl_setopt($this->ch, CURLOPT_FOLLOWLOCATION, TRUE);
 
 		// use gzip if possible for performance
 		curl_setopt($this->ch, CURLOPT_ENCODING , 'gzip, deflate');

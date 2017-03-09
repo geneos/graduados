@@ -15,11 +15,11 @@
 
 			<!-- footer credits -->
 			<div class="footer-credits">
-				Powered by the &nbsp;
-				<a href="http://www.ushahidi.com/">
+				
+				<a href="http://www.uner.edu.ar/">
 					<img src="<?php echo url::file_loc('img'); ?>media/img/footer-logo.png" alt="Ushahidi" class="footer-logo" />
 				</a>
-				&nbsp; Platform
+				
 			</div>
 			<!-- / footer credits -->
 
@@ -46,6 +46,10 @@
 								<?php echo Kohana::lang('ui_main.alerts'); ?></a>
 						</li>
 					<?php endif; ?>
+                                        <li>
+                                                <a href="https://www.facebook.com/Área-de-Graduados-UNER-311667879181382">Facebok</a>
+                                        </li>
+
 
 					<?php if (Kohana::config('settings.site_contact_page')): ?>
 					<li>
